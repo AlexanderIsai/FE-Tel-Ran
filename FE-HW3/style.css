@@ -29,4 +29,6 @@ a {
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
