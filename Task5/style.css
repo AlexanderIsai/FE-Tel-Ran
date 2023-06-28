@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    margin: 200px auto;
+}
+
+a {
+    color: white;
+}
+
+.item {
+    padding: 7px;
+    background: orangered;
+    border-radius: 50%;
+}
+
+i {
+    font-size: 30px;
+}
