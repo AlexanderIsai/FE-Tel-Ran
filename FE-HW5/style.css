@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+html, body, .travel-container {
+    height: 100%;
+}
 
 .travel-container {
     margin-top: 150px;
@@ -13,13 +16,13 @@
 h1 {
     font-family: 'PT Serif', serif;
     position: absolute;
-    font-size: 105px;
+    font-size: 110px;
     font-weight: 300;
     text-transform: uppercase;
     width: 700px;
     text-align: center;
-    top: -110px;
-    left: 27%;
+    top: -115px;
+    left: 32%;
 }
 
 .travel-item {
