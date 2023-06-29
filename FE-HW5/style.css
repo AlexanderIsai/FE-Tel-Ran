@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-html, body, .travel-container {
-    height: 100%;
-}
-
 .travel-container {
     margin-top: 150px;
     display: flex;
