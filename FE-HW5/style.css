@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+.travel-container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    position: relative;
+
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    position: absolute;
+    font-size: 110px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 700px;
+    text-align: center;
+    top: -115px;
+    left: 32%;
+}
+
+.travel-item {
+    width: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure {
+
+    aspect-ratio: 1 / 1.5;
+}
+
+h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+p {
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+a, i {
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.travel-container .travel-item:nth-child(3) {
+    margin-top: 70px;
+}
+
