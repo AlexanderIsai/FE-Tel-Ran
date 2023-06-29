@@ -13,13 +13,13 @@
 h1 {
     font-family: 'PT Serif', serif;
     position: absolute;
-    font-size: 110px;
+    font-size: 105px;
     font-weight: 300;
     text-transform: uppercase;
     width: 700px;
     text-align: center;
-    top: -115px;
-    left: 32%;
+    top: -110px;
+    left: 27%;
 }
 
 .travel-item {
