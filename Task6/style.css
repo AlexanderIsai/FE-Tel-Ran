@@ -7,17 +7,13 @@ body {
 
 .gallery {
     display: flex;
-    gap: 40px;
-    max-width: 800px;
+    gap: 20px;
+    max-width: 400px;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 figure {
     line-height: 0;
-    width: calc(100% / 4 - 120px / 4);
-}
-
-img {
-    width: 100%;
+    width: calc(100% / 4 - 60px / 4);
 }
