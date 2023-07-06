@@ -1,0 +1,29 @@
+h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.basis {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.answers {
+    display: inline-block;
+    background: rgba(206, 214, 216, 0.89);
+    font-size: 18px;
+    font-weight: bold;
+    width: 400px;
+    line-height: 2;
+    text-decoration: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.answer1 {
+    display: none;
+}
+
+.h21, .h22, .h23 {
+    display: none;
+}
