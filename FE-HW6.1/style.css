@@ -6,7 +6,7 @@ h1 {
 
 .basis {
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .answers {
@@ -15,15 +15,16 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     width: 400px;
-    line-height: 1.7;
+    line-height: 2;
     text-decoration: 2px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .answer1 {
     display: none;
 }
 
-.h21, .h22, .h23 {
+.h21, .h22, .h23, h1, .h24 {
     display: none;
 }
+
