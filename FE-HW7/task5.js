@@ -5,4 +5,5 @@ function converterGrad(celsius) {
 }
 
 let celsius = +prompt("Конвертор градусов Цельсия в Фаренгейты. Input celsius value")
+console.log("Задача 5. Конвертация градусов Цельсия в Фаренгейты")
 console.log(`${celsius} grad in Celsius In Fahrenheit is  ${converterGrad(celsius)}`)
