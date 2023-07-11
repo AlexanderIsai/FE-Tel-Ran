@@ -16,5 +16,5 @@ function outputOddNumbers() {
     }
 }
 
-console.log("Нечетные числа от 1 до 10")
+console.log("Задача 1. Нечетные числа от 1 до 10")
 outputOddNumbers();
