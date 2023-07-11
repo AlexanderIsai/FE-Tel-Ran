@@ -11,4 +11,6 @@ HW5 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW5/
 
 HW6 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW6/  
 
-HW6 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW6.1/
+HW6 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW6.1/  
+
+HW6 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW7/
