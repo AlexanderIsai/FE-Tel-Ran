@@ -6,7 +6,9 @@ function getAverageValue(array) {
         (accumulator, currentValue) => accumulator + currentValue,
         initialValue
     );
+    console.log("Среднее арифметическое массива случайных чисел")
     return sumWithInitial / array.length
+
 }
 
 // function getAverageValue(array){
@@ -29,6 +31,7 @@ function createArray(length) {
 }
 
 alert("Задача 4. Вычисление среднего арифметического всех элементов массива случайных чисел")
+console.log("Задача 4. Среднее арифметическое массива случайных чисел")
 let length = +prompt("Input length of array")
-console.log("Среднее арифметическое массива случайных чисел")
+
 console.log(getAverageValue(createArray(length)).toFixed(2))
