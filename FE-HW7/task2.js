@@ -12,5 +12,5 @@ function sumNumbers(start, end) {
 
 let start = +prompt("Вычисление суммы чисел заданного диапазона. Enter start value")
 let end = +prompt("Enter end value")
-console.log(`Сумма всех чисел в диапазоне от ${start} до ${end}`)
+console.log(`Задача 2. Сумма всех чисел в диапазоне от ${start} до ${end}`)
 sumNumbers(start, end)
