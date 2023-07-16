@@ -127,3 +127,4 @@ function getAverageValue(array) {
 }
 console.log("Задача 7")
 getAverageValue(randomArray)
+alert("Спасибо. Домашняя работа выполнена. Результаты в консоли")
