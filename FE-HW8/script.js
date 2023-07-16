@@ -121,7 +121,7 @@ function getAverageValue(array) {
         (accumulator, currentValue) => accumulator + currentValue,
         initialValue
     );
-    console.log("Среднее арифметическое массива случайных чисел")
+    console.log("Среднее арифметическое отсортированного массива случайных чисел")
     console.log(array)
     console.log(sumWithInitial / array.length)
 }
