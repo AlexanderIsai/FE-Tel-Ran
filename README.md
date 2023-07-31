@@ -17,3 +17,4 @@ HW7 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW7/
 
 HW8 - https://alexanderisai.github.io/FE-Tel-Ran/FE-HW8/  
 
+HW8 - https://alexanderisai.github.io/FE-Tel-Ran/GameClicker/  
