@@ -1,0 +1,46 @@
+body {
+    background: blue;
+}
+
+.game {
+    margin: 100px 100px;
+}
+
+#start {
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.game-area {
+    background: white;
+    width: 700px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-object {
+    width: 100px;
+    aspect-ratio: 1;
+    background: red;
+    transform: translateY(-100%);
+    position: absolute;
+}
+.move {
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes movement {
+    to {
+        transform: translateY(700px);
+    }
+}
