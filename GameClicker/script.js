@@ -49,6 +49,6 @@ function getRandomColor() {
 }
 
 function getRandomPosition() {
-    const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth; // Ширина окна браузера минус ширина объекта
+    const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth; 
     return Math.floor(Math.random() * maxWidth);
 }
