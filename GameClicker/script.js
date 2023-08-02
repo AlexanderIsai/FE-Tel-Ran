@@ -5,7 +5,7 @@ let gameArea = document.querySelector('.game-area')
 startButton.innerText = "Start";
 let soundWin = new Audio('sounds/win.wav');
 let soundLose = new Audio('sounds/lose.mp3');
-let gameOver = new Audio('sounds/game-over.wav');
+let soundGameOver = new Audio('sounds/game-over.wav');
 
 
 function startGame() {
@@ -27,12 +27,17 @@ function miss(event) {
         soundLose.play();
     }
     if (hitScore <= 0) {
-        gameObject.classList.remove('move')
-        startButton.innerText = "Start"
-        gameOver.currentTime =0;
-        gameOver.play();
-        alert("GAME OVER!")
+        finishGame()
     }
+}
+
+function finishGame(){
+    gameObject.classList.remove('move')
+    startButton.innerText = "Start"
+    soundGameOver.currentTime =0;
+    soundGameOver.play();
+    setTimeout(() =>
+        alert("GAME OVER!"), 100 )
 }
 
 function hit() {
