@@ -49,5 +49,5 @@ function setRandomColor() {
 
 function setRandomPosition() {
     const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth;
-    gameObject.style.left = Math.floor(Math.random() * maxWidth) + 'px';
+    gameObject.style.left = Math.random() * maxWidth + 'px';
 }
