@@ -34,21 +34,20 @@ function hit(){
     gameObject.classList.remove('move')
     void gameObject.offsetWidth // MAGIC
     gameObject.classList.add('move')
-    gameObject.style.background = getRandomColor();
-    let randomLeft = getRandomPosition();
-    gameObject.style.left = randomLeft + 'px';
+    setRandomColor();
+    setRandomPosition();
 }
 
-function getRandomColor() {
+function setRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        color += letters[Math.floor(Math.random() * 16 + 1)];
     }
-    return color;
+    gameObject.style.background = color;
 }
 
-function getRandomPosition() {
-    const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth; 
-    return Math.floor(Math.random() * maxWidth);
+function setRandomPosition() {
+    const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth;
+    gameObject.style.left = Math.floor(Math.random() * maxWidth) + 'px';
 }
