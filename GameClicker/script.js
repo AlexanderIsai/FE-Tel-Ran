@@ -2,10 +2,12 @@ let hitScore;
 let gameObject = document.querySelector('.game-object');
 let startButton = document.querySelector('button');
 let gameArea = document.querySelector('.game-area')
-startButton.innerText = "Start"
+startButton.innerText = "Start";
+let soundWin = new Audio('sounds/win.wav');
+let soundLose = new Audio('sounds/lose.mp3')
 
 
-function startGame(){
+function startGame() {
     hitScore = 0;
     gameObject.classList.add('move')
     if (startButton.textContent === "Start") {
@@ -13,23 +15,24 @@ function startGame(){
     } else {
         startButton.innerText = "Start"
         gameObject.classList.remove('move')
-
     }
 }
 
-function miss(event){
+function miss(event) {
     if (event.target.className === "game-area") {
         hitScore--;
         document.title = `Score ${hitScore}`;
+        soundLose.currentTime = 0;
+        soundLose.play();
     }
-    if (hitScore < 0){
+    if (hitScore < 0) {
         gameObject.classList.remove('move')
         startButton.innerText = "Start"
         alert("You are loser")
     }
 }
 
-function hit(){
+function hit() {
     hitScore++;
     document.title = `Score ${hitScore}`;
     gameObject.classList.remove('move')
@@ -37,6 +40,8 @@ function hit(){
     gameObject.classList.add('move')
     setRandomColor();
     setRandomPosition();
+    soundWin.currentTime = 0;
+    soundWin.play();
 }
 
 function setRandomColor() {
