@@ -21,7 +21,6 @@ body {
     width: 700px;
     aspect-ratio: 1;
     overflow: hidden;
-    position: relative;
 }
 
 .game-object {
@@ -29,7 +28,7 @@ body {
     aspect-ratio: 1;
     background: red;
     transform: translateY(-100%);
-    position: absolute;
+    position: relative;
 }
 .move {
     animation-name: movement;
