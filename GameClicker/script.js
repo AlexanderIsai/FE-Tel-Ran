@@ -18,9 +18,10 @@ function startGame(){
 }
 
 function miss(event){
-    if(event.target.className === "game-area")
-    hitScore--;
-    document.title = `Score ${hitScore}`;
+    if (event.target.className === "game-area") {
+        hitScore--;
+        document.title = `Score ${hitScore}`;
+    }
     if (hitScore < 0){
         gameObject.classList.remove('move')
         startButton.innerText = "Start"
