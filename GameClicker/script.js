@@ -25,6 +25,7 @@ function miss(event) {
         document.title = `Score ${hitScore}`;
         soundLose.currentTime = 0;
         soundLose.play();
+        increaseObject();
     }
     if (hitScore <= 0) {
         finishGame()
@@ -38,6 +39,7 @@ function finishGame(){
     soundGameOver.play();
     setTimeout(() =>
         alert("GAME OVER!"), 100 )
+
 }
 
 function hit() {
@@ -48,6 +50,7 @@ function hit() {
     gameObject.classList.add('move')
     setRandomColor();
     setRandomPosition();
+    decreaseObject();
     soundWin.currentTime = 0;
     soundWin.play();
 }
@@ -64,4 +67,12 @@ function setRandomColor() {
 function setRandomPosition() {
     const maxWidth = gameArea.offsetWidth - gameObject.offsetWidth;
     gameObject.style.left = Math.random() * maxWidth + 'px';
+}
+
+function decreaseObject() {
+    gameObject.style.width = gameObject.offsetWidth * 0.9 + 'px';
+}
+
+function increaseObject() {
+    gameObject.style.width = gameObject.offsetWidth * 1.1 + 'px';
 }
