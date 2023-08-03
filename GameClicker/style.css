@@ -16,6 +16,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 50px;
+    margin-right: 100px;
 }
 
 .game-area {
@@ -32,6 +33,7 @@ body {
     transform: translateY(-100%);
     position: relative;
 }
+
 .move {
     animation-name: movement;
     animation-duration: 2s;
@@ -44,4 +46,35 @@ body {
     to {
         transform: translateY(600px);
     }
+}
+
+span {
+    font-weight: bold;
+    color: white;
+    margin-right: 25px;
+    font-size: 26px;
+}
+
+.score {
+    border: 3px solid white;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.you-lose {
+    display: none;
+    position: absolute;
+    font-size: 160px;
+    color: red;
+    top: 45%;
+    left: 23%;
+}
+
+.you-win {
+    display: none;
+    position: absolute;
+    font-size: 160px;
+    color: gold;
+    top: 45%;
+    left: 28%;
 }
