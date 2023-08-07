@@ -15,6 +15,7 @@ let youLose = document.querySelector('.you-lose');
 
 function startGame() {
     hitScore = 0;
+    gameArea.style.display = 'block';
     gameObject.classList.add('move')
     youLose.style.display = 'none';
     youWin.style.display = 'none';
@@ -49,6 +50,7 @@ function finishGameLose(){
     youLose.style.display = 'block';
     soundGameOver.currentTime =0;
     soundGameOver.play();
+    gameArea.style.display = 'none';
 }
 
 function finishGameWin(){
@@ -57,6 +59,7 @@ function finishGameWin(){
     youWin.style.display = 'block';
     soundGameWin.currentTime =0;
     soundGameWin.play();
+    gameArea.style.display = 'none';
 }
 
 function hit() {
